@@ -110,25 +110,7 @@
 </head>
 <body class="bg-background text-on-background font-body-md text-body-md antialiased overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container">
 <!-- TopAppBar -->
-<header class="fixed top-0 w-full z-50 bg-surface/70 backdrop-blur-xl shadow-[0_10px_30px_rgba(176,212,227,0.2)]">
-    <div class="flex justify-between items-center w-full px-container-padding-mobile md:px-container-padding-desktop h-20 max-w-7xl mx-auto">
-        <div class="flex items-center gap-2">
-            <span class="font-display-lg text-headline-md text-primary">Jeda</span>
-        </div>
-        <nav class="hidden md:flex items-center gap-8">
-            <a class="text-primary font-bold border-b-2 border-primary pb-1" href="/">Beranda</a>
-            <a class="text-on-surface-variant hover:text-primary transition-colors duration-300 pb-1" href="tes-mandiri">Tes Mandiri</a>
-            <a class="text-on-surface-variant hover:text-primary transition-colors duration-300 pb-1" href="pusat-ketenangan">Pusat Ketenangan</a>
-            <a class="text-on-surface-variant hover:text-primary transition-colors duration-300 pb-1" href="sumber-daya">Sumber Daya</a>
-            <a class="text-on-surface-variant hover:text-primary transition-colors duration-300 pb-1" href="tentang-kami">Tentang Kami</a>
-        </nav>
-        <div class="flex items-center gap-4">
-            <button aria-label="Profil Pengguna" class="text-on-surface-variant hover:text-primary transition-colors duration-300 scale-105 transition-transform duration-200">
-                <span class="material-symbols-outlined text-3xl">account_circle</span>
-            </button>
-        </div>
-    </div>
-</header>
+<?php include 'components/navbar.php'; ?>
 
 <main class="pt-28 pb-section-gap min-h-screen">
     <!-- Hero Section -->
@@ -240,36 +222,7 @@
     </section>
 </main>
 
-<!-- BottomNavBar (Mobile Only) -->
-<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 md:hidden bg-surface/80 backdrop-blur-2xl shadow-[0_-5px_20px_rgba(176,212,227,0.15)] rounded-t-xl">
-    <a class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-full px-6 py-2 hover:opacity-80 transition-opacity scale-95 duration-200 ease-out" href="/">
-        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
-        <span class="font-label-md text-label-md mt-1">Beranda</span>
-    </a>
-    <a class="flex flex-col items-center justify-center text-on-surface-variant hover:opacity-80 transition-opacity" href="tes-mandiri">
-        <span class="material-symbols-outlined">self_care</span>
-        <span class="font-label-md text-label-md mt-1">Mulai Tes</span>
-    </a>
-    <a class="flex flex-col items-center justify-center text-on-surface-variant hover:opacity-80 transition-opacity" href="pusat-ketenangan">
-        <span class="material-symbols-outlined">spa</span>
-        <span class="font-label-md text-label-md mt-1">Bantuan</span>
-    </a>
-</nav>
-
 <!-- Footer -->
-<footer class="w-full py-section-gap px-container-padding-mobile md:px-container-padding-desktop border-t border-outline-variant/30 text-center bg-surface-container-low">
-    <div class="max-w-7xl mx-auto flex flex-col items-center">
-        <div class="font-display-lg text-headline-md text-primary mb-6">Jeda</div>
-        <div class="flex flex-wrap justify-center gap-6 mb-8">
-            <a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors transition-all duration-300" href="tentang-kami">Tentang Kami</a>
-            <a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors transition-all duration-300" href="#">Kebijakan Privasi</a>
-            <a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors transition-all duration-300" href="#">Kontak Darurat</a>
-            <a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors transition-all duration-300" href="#">Syarat Ketentuan</a>
-        </div>
-        <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">
-            © 2024 Jeda. Hasil tes ini hanya untuk keperluan refleksi diri dan skrining awal. Bukan pengganti diagnosis profesional.
-        </p>
-    </div>
-</footer>
+<?php include 'components/footer.php'; ?>
 </body>
 </html>

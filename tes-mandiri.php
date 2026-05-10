@@ -1,3 +1,10 @@
+<?php
+session_start();
+// Clear any previous test session so we can start fresh
+if (isset($_SESSION['answers'])) {
+    unset($_SESSION['answers']);
+}
+?>
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -101,23 +108,9 @@
     <div class="fixed top-[-10%] left-[-10%] w-[50%] h-[50%] bg-surface-container rounded-full mix-blend-multiply filter blur-[100px] opacity-60 pointer-events-none -z-10"></div>
     <div class="fixed bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-secondary-fixed rounded-full mix-blend-multiply filter blur-[100px] opacity-40 pointer-events-none -z-10"></div>
 
-    <header class="fixed top-0 w-full z-50 bg-surface/70 backdrop-blur-xl shadow-[0_10px_30px_rgba(176,212,227,0.2)]">
-        <div class="flex justify-between items-center w-full px-container-padding-mobile md:px-container-padding-desktop h-20 max-w-7xl mx-auto">
-            <div class="font-display-lg text-headline-md text-primary">Jeda</div>
-            <nav class="hidden md:flex items-center gap-8 h-full">
-                <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300 h-full flex items-center px-2" href="/">Beranda</a>
-                <a class="font-body-md text-body-md text-primary font-bold border-b-2 border-primary hover:text-primary transition-colors duration-300 h-full flex items-center px-2" href="tes-mandiri">Tes Mandiri</a>
-                <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300 h-full flex items-center px-2" href="pusat-ketenangan">Pusat Ketenangan</a>
-                <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300 h-full flex items-center px-2" href="sumber-daya">Sumber Daya</a>
-                <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300 h-full flex items-center px-2" href="tentang-kami">Tentang Kami</a>
-            </nav>
-            <button aria-label="Profil Pengguna" class="text-on-surface-variant hover:text-primary transition-colors duration-300 scale-105 transition-transform duration-200">
-                <span class="material-symbols-outlined" style="font-size: 28px;">account_circle</span>
-            </button>
-        </div>
-    </header>
+    <?php include 'components/navbar.php'; ?>
 
-    <main class="max-w-7xl mx-auto px-container-padding-mobile md:px-container-padding-desktop py-section-gap flex flex-col gap-section-gap z-10 relative">
+    <main class="max-w-7xl mx-auto px-container-padding-mobile md:px-container-padding-desktop py-section-gap flex flex-col gap-section-gap z-10 relative mt-16 md:mt-24">
         <section class="flex flex-col items-center text-center max-w-3xl mx-auto mt-8 md:mt-16 gap-unit">
             <h1 class="font-display-lg text-display-lg text-on-surface mb-4">Ruang <span class="text-primary">Tenang</span> untuk Merefleksikan Diri</h1>
             <p class="font-body-lg text-body-lg text-on-surface-variant">Bagaimana perasaanmu hari ini? Mari kita mulai perjalananmu pelan-pelan. Tes mandiri ini dirancang sebagai langkah awal untuk mengenali kondisimu dengan cara yang nyaman dan suportif.</p>
@@ -160,34 +153,6 @@
         </section>
     </main>
 
-    <footer class="w-full py-section-gap px-container-padding-mobile md:px-container-padding-desktop border-t border-outline-variant/30 text-center bg-surface-container-low font-body-md text-body-md z-10 relative mt-auto">
-        <div class="max-w-7xl mx-auto flex flex-col gap-6 items-center">
-            <div class="font-display-lg text-headline-md text-primary mb-4">Jeda</div>
-            <nav class="flex flex-wrap justify-center gap-6 mb-6">
-                <a class="text-on-surface-variant hover:text-secondary transition-colors transition-all duration-300" href="tentang-kami">Tentang Kami</a>
-                <a class="text-on-surface-variant hover:text-secondary transition-colors transition-all duration-300" href="#">Kebijakan Privasi</a>
-                <a class="text-on-surface-variant hover:text-secondary transition-colors transition-all duration-300" href="#">Kontak Darurat</a>
-                <a class="text-on-surface-variant hover:text-secondary transition-colors transition-all duration-300" href="#">Syarat Ketentuan</a>
-            </nav>
-            <p class="text-primary max-w-2xl text-sm opacity-80">
-                © 2024 Jeda. Hasil tes ini hanya untuk keperluan refleksi diri dan skrining awal. Bukan pengganti diagnosis profesional.
-            </p>
-        </div>
-    </footer>
-
-    <nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 md:hidden bg-surface/80 backdrop-blur-2xl shadow-[0_-5px_20px_rgba(176,212,227,0.15)] rounded-t-xl pb-6">
-        <a class="flex flex-col items-center justify-center text-on-surface-variant hover:opacity-80 transition-opacity font-label-md text-label-md gap-1" href="/">
-            <span class="material-symbols-outlined">home</span>
-            <span>Beranda</span>
-        </a>
-        <a class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-full px-6 py-2 hover:opacity-80 transition-opacity font-label-md text-label-md gap-1 scale-95 duration-200 ease-out shadow-sm" href="tes-mandiri">
-            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">self_care</span>
-            <span>Mulai Tes</span>
-        </a>
-        <a class="flex flex-col items-center justify-center text-on-surface-variant hover:opacity-80 transition-opacity font-label-md text-label-md gap-1" href="pusat-ketenangan">
-            <span class="material-symbols-outlined">spa</span>
-            <span>Bantuan</span>
-        </a>
-    </nav>
+    <?php include 'components/footer.php'; ?>
 </body>
 </html>
