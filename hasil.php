@@ -135,26 +135,9 @@ foreach (["Depresi" => $dep_class, "Kecemasan" => $anx_class, "Stres" => $str_cl
     </script>
 </head>
 <body class="bg-background text-on-background font-body-md min-h-screen flex flex-col antialiased">
-    <!-- TopAppBar -->
-    <header class="sticky top-0 z-50 bg-surface/70 backdrop-blur-xl shadow-[0_10px_30px_rgba(176,212,227,0.2)]">
-        <div class="flex justify-between items-center w-full px-container-padding-mobile md:px-container-padding-desktop h-20 max-w-7xl mx-auto">
-            <a class="font-display-lg text-headline-md text-primary tracking-tight" href="/">Jeda</a>
-            <nav class="hidden md:flex gap-8 items-center">
-                <a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-300" href="/">Beranda</a>
-                <a class="text-primary font-bold border-b-2 border-primary pb-1 font-body-md text-body-md hover:text-primary transition-colors duration-300" href="tes-mandiri">Tes Mandiri</a>
-                <a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-300" href="pusat-ketenangan">Pusat Ketenangan</a>
-                <a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-300" href="sumber-daya">Sumber Daya</a>
-                <a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-300" href="tentang-kami">Tentang Kami</a>
-            </nav>
-            <div class="flex items-center gap-4">
-                <button aria-label="Profil Pengguna" class="text-primary hover:text-primary transition-colors duration-300 scale-105 transition-transform duration-200">
-                    <span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 0;">account_circle</span>
-                </button>
-            </div>
-        </div>
-    </header>
+    <?php include 'components/navbar.php'; ?>
 
-    <main class="flex-grow w-full max-w-4xl mx-auto px-container-padding-mobile md:px-0 py-section-gap flex flex-col relative z-10">
+    <main class="flex-grow w-full max-w-4xl mx-auto px-container-padding-mobile md:px-0 py-section-gap flex flex-col relative z-10 mt-16 md:mt-24">
         <!-- Ambient Decor -->
         <div class="fixed top-20 left-0 w-96 h-96 bg-primary-container/20 rounded-full blur-[100px] -z-10 pointer-events-none"></div>
         <div class="fixed bottom-20 right-0 w-[500px] h-[500px] bg-secondary-container/20 rounded-full blur-[120px] -z-10 pointer-events-none"></div>
@@ -243,12 +226,6 @@ foreach (["Depresi" => $dep_class, "Kecemasan" => $anx_class, "Stres" => $str_cl
         </div>
     </main>
 
-    <footer class="w-full py-section-gap px-container-padding-mobile md:px-container-padding-desktop border-t border-outline-variant/30 text-center bg-surface-container-low mt-auto pb-24 md:pb-section-gap">
-        <div class="max-w-4xl mx-auto flex flex-col items-center gap-6">
-            <p class="font-body-md text-body-md text-on-surface-variant opacity-80 max-w-2xl mx-auto">
-                © 2024 Jeda. Hasil tes ini hanya untuk keperluan refleksi diri dan skrining awal. Bukan pengganti diagnosis profesional.
-            </p>
-        </div>
-    </footer>
+    <?php include 'components/footer.php'; ?>
 </body>
 </html>

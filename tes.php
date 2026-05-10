@@ -143,30 +143,10 @@ $back_url = $prev_q > 0 ? "tes?q=$prev_q" : "tes-mandiri";
     </script>
 </head>
 <body class="bg-background text-on-background font-body-md min-h-screen flex flex-col antialiased selection:bg-primary-container selection:text-on-primary-container">
-    <!-- TopAppBar -->
-    <header class="sticky top-0 z-50 bg-surface/70 dark:bg-surface-dim/70 backdrop-blur-xl shadow-[0_10px_30px_rgba(176,212,227,0.2)]">
-        <div class="flex justify-between items-center w-full px-container-padding-mobile md:px-container-padding-desktop h-20 max-w-7xl mx-auto">
-            <!-- Brand Logo -->
-            <a class="font-display-lg text-headline-md text-primary dark:text-primary-fixed tracking-tight" href="/">Jeda</a>
-            <!-- Desktop Navigation -->
-            <nav class="hidden md:flex gap-8 items-center">
-                <a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-300" href="/">Beranda</a>
-                <a class="text-primary font-bold border-b-2 border-primary pb-1 font-body-md text-body-md hover:text-primary transition-colors duration-300" href="tes-mandiri">Tes Mandiri</a>
-                <a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-300" href="pusat-ketenangan">Pusat Ketenangan</a>
-                <a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-300" href="sumber-daya">Sumber Daya</a>
-                <a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-300" href="tentang-kami">Tentang Kami</a>
-            </nav>
-            <!-- Trailing Actions -->
-            <div class="flex items-center gap-4">
-                <button aria-label="Profil Pengguna" class="text-primary hover:text-primary transition-colors duration-300 scale-105 transition-transform duration-200">
-                    <span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 0;">account_circle</span>
-                </button>
-            </div>
-        </div>
-    </header>
+    <?php include 'components/navbar.php'; ?>
 
     <!-- Main Content Canvas -->
-    <main class="flex-grow w-full max-w-3xl mx-auto px-container-padding-mobile md:px-0 py-section-gap flex flex-col relative z-10">
+    <main class="flex-grow w-full max-w-3xl mx-auto px-container-padding-mobile md:px-0 py-section-gap flex flex-col relative z-10 mt-16 md:mt-24">
         <!-- Ambient Decor -->
         <div class="fixed top-20 left-0 w-96 h-96 bg-primary-container/20 rounded-full blur-[100px] -z-10 pointer-events-none"></div>
         <div class="fixed bottom-20 right-0 w-[500px] h-[500px] bg-secondary-container/20 rounded-full blur-[120px] -z-10 pointer-events-none"></div>
@@ -231,29 +211,6 @@ $back_url = $prev_q > 0 ? "tes?q=$prev_q" : "tes-mandiri";
         </form>
     </main>
 
-    <!-- BottomNavBar (Mobile Only) -->
-    <nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 md:hidden bg-surface/80 backdrop-blur-2xl shadow-[0_-5px_20px_rgba(176,212,227,0.15)] rounded-t-xl">
-        <a class="flex flex-col items-center justify-center text-on-surface-variant hover:opacity-80 transition-opacity" href="/">
-            <span class="material-symbols-outlined text-[24px]">home</span>
-            <span class="font-label-md text-[10px] mt-1">Beranda</span>
-        </a>
-        <a class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-full px-6 py-2 hover:opacity-80 transition-opacity scale-95 duration-200 ease-out" href="tes-mandiri">
-            <span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">self_care</span>
-            <span class="font-label-md text-[10px] mt-1 font-bold">Mulai Tes</span>
-        </a>
-        <a class="flex flex-col items-center justify-center text-on-surface-variant hover:opacity-80 transition-opacity" href="pusat-ketenangan">
-            <span class="material-symbols-outlined text-[24px]">spa</span>
-            <span class="font-label-md text-[10px] mt-1">Bantuan</span>
-        </a>
-    </nav>
-
-    <!-- Footer -->
-    <footer class="w-full py-section-gap px-container-padding-mobile md:px-container-padding-desktop border-t border-outline-variant/30 text-center bg-surface-container-low mt-auto pb-24 md:pb-section-gap">
-        <div class="max-w-4xl mx-auto flex flex-col items-center gap-6">
-            <p class="font-body-md text-body-md text-on-surface-variant opacity-80 max-w-2xl mx-auto">
-                © 2024 Jeda. Hasil tes ini hanya untuk keperluan refleksi diri dan skrining awal. Bukan pengganti diagnosis profesional.
-            </p>
-        </div>
-    </footer>
+    <?php include 'components/footer.php'; ?>
 </body>
 </html>
