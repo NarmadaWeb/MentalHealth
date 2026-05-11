@@ -123,7 +123,7 @@ if (isset($_SESSION['answers'])) {
                 </div>
                 <h2 class="font-headline-md text-headline-md text-on-surface mb-2">Tingkat Stres</h2>
                 <p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-8">Evaluasi beban pikiran dan ketegangan fisik yang mungkin kamu alami akhir-akhir ini. Cocok untuk mengurai rasa kewalahan.</p>
-                <a href="tes" class="bg-primary text-on-primary font-label-md text-label-md text-center rounded-full py-3 px-6 w-fit hover:scale-[1.02] transition-transform duration-200 ease-out shadow-sm">
+                <a href="/tes" class="bg-primary text-on-primary font-label-md text-label-md text-center rounded-full py-3 px-6 w-fit hover:scale-[1.02] transition-transform duration-200 ease-out shadow-sm">
                     Mulai Tes
                 </a>
             </div>
@@ -135,7 +135,7 @@ if (isset($_SESSION['answers'])) {
                 </div>
                 <h2 class="font-headline-md text-headline-md text-on-surface mb-2 relative z-10">Skrining Kecemasan</h2>
                 <p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-8 relative z-10">Pahami pola rasa cemas dan khawatir yang muncul. Bantu dirimu mengenali pemicu dan respon tubuh saat merasa tidak tenang.</p>
-                <a href="tes" class="bg-primary text-on-primary font-label-md text-label-md text-center rounded-full py-3 px-6 w-fit hover:scale-[1.02] transition-transform duration-200 ease-out shadow-sm relative z-10">
+                <a href="/tes" class="bg-primary text-on-primary font-label-md text-label-md text-center rounded-full py-3 px-6 w-fit hover:scale-[1.02] transition-transform duration-200 ease-out shadow-sm relative z-10">
                     Mulai Tes
                 </a>
             </div>
@@ -146,7 +146,7 @@ if (isset($_SESSION['answers'])) {
                 </div>
                 <h2 class="font-headline-md text-headline-md text-on-surface mb-2">Semua Skrining</h2>
                 <p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-8">Refleksi suasana hati secara menyeluruh untuk mendeteksi tingkat depresi, kecemasan, dan stres (DASS-21).</p>
-                <a href="tes" class="bg-primary text-on-primary font-label-md text-label-md text-center rounded-full py-3 px-6 w-fit hover:scale-[1.02] transition-transform duration-200 ease-out shadow-sm">
+                <a href="/tes" class="bg-primary text-on-primary font-label-md text-label-md text-center rounded-full py-3 px-6 w-fit hover:scale-[1.02] transition-transform duration-200 ease-out shadow-sm">
                     Mulai Tes
                 </a>
             </div>

@@ -4,7 +4,7 @@ require_once 'data_dass21.php';
 
 // Redirect to start if answers are not complete
 if (!isset($_SESSION['answers']) || count($_SESSION['answers']) < count($questions)) {
-    header("Location: tes-mandiri");
+    header("Location: /tes-mandiri");
     exit();
 }
 
