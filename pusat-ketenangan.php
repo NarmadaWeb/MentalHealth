@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Pusat Ketenangan - Jeda</title>
+    <title>Pusat Ketenangan - MentalHealth</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com" rel="preconnect"/>
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -134,15 +134,15 @@
                         </div>
                         <span class="material-symbols-outlined text-primary" style="font-size: 32px;">air</span>
                     </div>
-                    <!-- Static Representation of Breathing Circle -->
+                    <!-- Breathing Circle -->
                     <div class="relative w-48 h-48 md:w-64 md:h-64 flex items-center justify-center my-8">
                         <div class="absolute inset-0 rounded-full border-4 border-secondary-container/30"></div>
-                        <div class="w-3/4 h-3/4 bg-secondary-container rounded-full flex items-center justify-center shadow-[0_0_40px_rgba(196,232,248,0.5)]">
-                            <span class="font-headline-md text-headline-md text-on-secondary-container">Tarik Napas</span>
+                        <div id="breathing-circle" class="w-3/4 h-3/4 bg-secondary-container rounded-full flex items-center justify-center shadow-[0_0_40px_rgba(196,232,248,0.5)] transition-transform ease-in-out" style="transform: scale(0.8);">
+                            <span id="breathing-text" class="font-headline-md text-headline-md text-on-secondary-container transition-opacity duration-300 text-center px-4">Siap?</span>
                         </div>
                     </div>
                     <div class="flex gap-4 mt-8">
-                        <button class="bg-primary text-on-primary font-label-md text-label-md px-8 py-3 rounded-full hover:scale-105 transition-transform duration-200 shadow-[0_4px_14px_rgba(70,101,88,0.3)]">
+                        <button id="start-breathing-btn" class="bg-primary text-on-primary font-label-md text-label-md px-8 py-3 rounded-full hover:scale-105 transition-all duration-200 shadow-[0_4px_14px_rgba(70,101,88,0.3)]">
                             Mulai Latihan
                         </button>
                     </div>
@@ -225,5 +225,114 @@
     </main>
 
     <?php include 'components/footer.php'; ?>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const circle = document.getElementById('breathing-circle');
+        const text = document.getElementById('breathing-text');
+        const btn = document.getElementById('start-breathing-btn');
+
+        let isBreathing = false;
+        let breatheInterval;
+        let breatheTimeout1, breatheTimeout2;
+
+        const breatheTime = 4000;
+        const holdTime = 2000;
+        const totalCycleTime = breatheTime * 2 + holdTime; // 10s
+        const maxCycles = 5; // Berhenti otomatis setelah 5 siklus
+        let currentCycle = 0;
+
+        function animateText(newText) {
+            text.style.opacity = '0';
+            setTimeout(() => {
+                text.innerText = newText;
+                text.style.opacity = '1';
+            }, 300);
+        }
+
+        function stopBreathing(completed = false) {
+            isBreathing = false;
+            clearInterval(breatheInterval);
+            clearTimeout(breatheTimeout1);
+            clearTimeout(breatheTimeout2);
+            
+            btn.innerText = 'Mulai Latihan';
+            btn.classList.remove('bg-error', 'text-on-error');
+            btn.classList.add('bg-primary', 'text-on-primary');
+            
+            if (completed) {
+                const messages = [
+                    "Luar biasa! Terima kasih sudah mengambil jeda hari ini.",
+                    "Sangat bagus! Kamu berharga dan pantas merasa tenang.",
+                    "Hebat! Berterimakasihlah pada dirimu yang sudah bertahan.",
+                    "Bagus sekali! Setiap napas ini adalah bentuk cintamu pada diri sendiri.",
+                    "Luar biasa. Ingatlah bahwa kamu kuat dan luar biasa."
+                ];
+                const randomMsg = messages[Math.floor(Math.random() * messages.length)];
+                
+                // Menyesuaikan ukuran font sedikit agar teks yang panjang bisa muat di dalam lingkaran
+                text.style.fontSize = '1.1rem';
+                text.style.lineHeight = '1.4';
+                
+                animateText(randomMsg);
+                
+                setTimeout(() => {
+                    if(!isBreathing) {
+                        text.style.fontSize = ''; // Kembalikan ke ukuran semula
+                        text.style.lineHeight = '';
+                        animateText('Siap?');
+                    }
+                }, 5000);
+            } else {
+                animateText('Siap?');
+            }
+            
+            circle.style.transition = 'transform 1s ease-in-out';
+            circle.style.transform = 'scale(0.8)';
+        }
+
+        function breathingAnimation() {
+            currentCycle++;
+            if (currentCycle > maxCycles) {
+                stopBreathing(true);
+                return;
+            }
+
+            // Tarik Napas (Inhale)
+            animateText('Tarik Napas');
+            circle.style.transition = `transform ${breatheTime}ms ease-in-out`;
+            circle.style.transform = 'scale(1.2)';
+
+            breatheTimeout1 = setTimeout(() => {
+                // Tahan (Hold)
+                animateText('Tahan');
+                
+                breatheTimeout2 = setTimeout(() => {
+                    // Hembuskan (Exhale)
+                    animateText('Hembuskan');
+                    circle.style.transition = `transform ${breatheTime}ms ease-in-out`;
+                    circle.style.transform = 'scale(0.8)';
+                }, holdTime);
+            }, breatheTime);
+        }
+
+        btn.addEventListener('click', () => {
+            if (isBreathing) {
+                // Berhenti Manual
+                stopBreathing(false);
+            } else {
+                // Start
+                isBreathing = true;
+                currentCycle = 0;
+                btn.innerText = 'Berhenti Latihan';
+                btn.classList.remove('bg-primary', 'text-on-primary');
+                btn.classList.add('bg-error', 'text-on-error');
+                
+                breathingAnimation();
+                breatheInterval = setInterval(breathingAnimation, totalCycleTime);
+            }
+        });
+    });
+    </script>
 </body>
 </html>

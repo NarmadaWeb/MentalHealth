@@ -1,19 +1,12 @@
-<?php
-session_start();
-// Clear any previous test session so we can start fresh
-if (isset($_SESSION['answers'])) {
-    unset($_SESSION['answers']);
-}
-?>
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>MentalHealth - Tes Mandiri</title>
+    <title>Kebijakan Privasi - MentalHealth</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet"/>
     <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -104,37 +97,26 @@ if (isset($_SESSION['answers'])) {
         }
     </script>
 </head>
-<body class="bg-background text-on-surface font-body-md text-body-md antialiased min-h-screen relative overflow-x-hidden pt-20 pb-24 md:pb-0">
-    <div class="fixed top-[-10%] left-[-10%] w-[50%] h-[50%] bg-surface-container rounded-full mix-blend-multiply filter blur-[100px] opacity-60 pointer-events-none -z-10"></div>
-    <div class="fixed bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-secondary-fixed rounded-full mix-blend-multiply filter blur-[100px] opacity-40 pointer-events-none -z-10"></div>
-
+<body class="bg-background text-on-surface font-body-md text-body-md antialiased min-h-screen relative overflow-x-hidden flex flex-col">
     <?php include 'components/navbar.php'; ?>
 
-    <main class="max-w-7xl mx-auto px-container-padding-mobile md:px-container-padding-desktop py-section-gap flex flex-col gap-section-gap z-10 relative mt-16 md:mt-24">
-        <section class="flex flex-col items-center text-center max-w-3xl mx-auto mt-8 md:mt-16 gap-unit">
-            <h1 class="font-display-lg text-display-lg text-on-surface mb-4">Ruang <span class="text-primary">Tenang</span> untuk Merefleksikan Diri</h1>
-            <p class="font-body-lg text-body-lg text-on-surface-variant">Bagaimana perasaanmu hari ini? Mari kita mulai perjalananmu pelan-pelan. Tes mandiri ini dirancang sebagai langkah awal untuk mengenali kondisimu dengan cara yang nyaman dan suportif.</p>
-        </section>
+    <main class="max-w-4xl mx-auto px-container-padding-mobile md:px-container-padding-desktop py-section-gap flex-grow mt-16 md:mt-24 z-10 relative">
+        <h1 class="font-display-lg text-headline-lg text-primary mb-8 text-center md:text-left">Kebijakan Privasi</h1>
+        <div class="bg-surface-container-lowest p-8 md:p-12 rounded-2xl shadow-[0_10px_30px_rgba(176,212,227,0.2)] border border-surface-container-high/50 text-on-surface-variant space-y-6">
+            <p>Di MentalHealth, kami sangat menghargai privasi dan kerahasiaan Anda. Berikut adalah bagaimana kami menangani data dan interaksi Anda di platform ini:</p>
+            
+            <h2 class="text-xl text-primary font-bold mt-8 mb-2">1. Pengumpulan Data Anonim</h2>
+            <p>Pelaksanaan tes skrining (DASS-21) pada platform kami dirancang sepenuhnya anonim. Kami tidak pernah meminta informasi sensitif yang bisa mengidentifikasi Anda secara pribadi (seperti nama asli, nomor identitas, atau alamat rumah).</p>
+            
+            <h2 class="text-xl text-primary font-bold mt-8 mb-2">2. Penggunaan Jawaban Tes</h2>
+            <p>Jawaban yang Anda berikan dalam tes semata-mata digunakan oleh algoritma kami secara langsung (real-time) untuk mengukur tingkat kecemasan, stres, dan depresi, lalu menampilkannya kembali kepada Anda di halaman hasil. Kami tidak menyebarkan, menjual, atau mengeksploitasi data jawaban tes Anda ke pihak ketiga mana pun.</p>
 
-        <section class="flex justify-center w-full">
-            <div class="max-w-2xl w-full bg-surface-container-lowest rounded-2xl shadow-[0_10px_40px_rgba(176,212,227,0.3)] p-8 md:p-12 flex flex-col items-center text-center border border-surface-container-high/50 hover:shadow-[0_15px_50px_rgba(176,212,227,0.4)] transition-all duration-300 relative overflow-hidden group">
-                <div class="absolute top-0 right-0 w-64 h-64 bg-primary-container rounded-full mix-blend-multiply opacity-20 transform translate-x-1/3 -translate-y-1/3 blur-3xl transition-transform duration-500 group-hover:scale-110"></div>
-                <div class="absolute bottom-0 left-0 w-48 h-48 bg-secondary-container rounded-full mix-blend-multiply opacity-20 transform -translate-x-1/3 translate-y-1/3 blur-2xl transition-transform duration-500 group-hover:scale-110"></div>
-                
-                <div class="w-20 h-20 rounded-full bg-surface-container-low flex items-center justify-center mb-6 group-hover:bg-primary-container transition-colors duration-300 relative z-10 shadow-sm">
-                    <span class="material-symbols-outlined text-primary text-4xl" style="font-variation-settings: 'FILL' 1;">psychology</span>
-                </div>
-                
-                <h2 class="font-headline-lg text-headline-lg text-on-surface mb-4 relative z-10">Skrining Kesehatan Mental (DASS-21)</h2>
-                <p class="font-body-lg text-body-lg text-on-surface-variant mb-10 relative z-10 max-w-lg">
-                    Tes ini akan membantu mengevaluasi tingkat <strong class="text-on-surface">Depresi</strong>, <strong class="text-on-surface">Kecemasan</strong>, dan <strong class="text-on-surface">Stres</strong> yang mungkin kamu alami. Terdiri dari 21 pertanyaan singkat yang merefleksikan perasaanmu selama seminggu terakhir.
-                </p>
-                
-                <a href="/tes" class="bg-primary text-on-primary font-label-md text-label-md text-center rounded-full py-4 px-10 hover:scale-105 transition-all duration-200 ease-out shadow-[0_4px_14px_rgba(70,101,88,0.3)] relative z-10 text-lg">
-                    Mulai Skrining Sekarang
-                </a>
-            </div>
-        </section>
+            <h2 class="text-xl text-primary font-bold mt-8 mb-2">3. Keamanan</h2>
+            <p>Kami berupaya melindungi informasi dan jalur komunikasi Anda di platform ini dengan praktik keamanan yang wajar. Namun, Anda menyadari bahwa transmisi informasi di internet tidak sepenuhnya aman dan penggunaan platform ini merupakan risiko Anda sendiri.</p>
+
+            <h2 class="text-xl text-primary font-bold mt-8 mb-2">4. Perubahan Kebijakan</h2>
+            <p>MentalHealth berhak untuk mengubah Kebijakan Privasi ini kapan saja. Setiap pembaruan akan diterbitkan langsung di halaman ini, sehingga Anda tetap mengetahui secara transparan bagaimana data Anda diperlakukan.</p>
+        </div>
     </main>
 
     <?php include 'components/footer.php'; ?>

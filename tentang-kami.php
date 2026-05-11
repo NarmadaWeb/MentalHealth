@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Tentang Kami - Jeda</title>
+    <title>Tentang Kami - MentalHealth</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
@@ -108,7 +108,7 @@
         <section class="text-center mb-section-gap max-w-3xl mx-auto">
             <h1 class="font-display-lg text-display-lg text-primary mb-6">Membangun Ruang Tenang</h1>
             <p class="font-body-lg text-body-lg text-on-surface-variant">
-                Jeda lahir dari kesadaran bahwa kesehatan mental adalah perjalanan yang butuh waktu, empati, dan pendekatan ilmiah yang tepat. Kami hadir untuk memberikan akses awal yang aman.
+                MentalHealth lahir dari kesadaran bahwa kesehatan mental adalah perjalanan yang butuh waktu, empati, dan pendekatan ilmiah yang tepat. Kami hadir untuk memberikan akses awal yang aman.
             </p>
         </section>
 
@@ -166,7 +166,7 @@
         </section>
 
         <section class="mb-section-gap text-center">
-            <h2 class="font-headline-lg text-headline-lg text-primary mb-12">Tim di Balik Jeda</h2>
+            <h2 class="font-headline-lg text-headline-lg text-primary mb-12">Tim di Balik MentalHealth</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-gutter">
                 <div class="flex flex-col items-center">
                     <div class="w-32 h-32 rounded-full bg-surface-container-highest mb-4 overflow-hidden shadow-[0_10px_30px_rgba(176,212,227,0.2)]">

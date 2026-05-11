@@ -19,14 +19,13 @@ $nav_items = [
     '/' => 'Beranda',
     '/tes-mandiri' => 'Tes Mandiri',
     '/pusat-ketenangan' => 'Pusat Ketenangan',
-    '/sumber-daya' => 'Sumber Daya',
     '/tentang-kami' => 'Tentang Kami'
 ];
 ?>
 <header class="fixed top-0 w-full z-50 bg-surface/70 backdrop-blur-xl shadow-[0_10px_30px_rgba(176,212,227,0.2)]">
     <div class="flex justify-between items-center w-full px-container-padding-mobile md:px-container-padding-desktop h-20 max-w-7xl mx-auto">
         <a href="/" class="flex items-center gap-2">
-            <span class="font-display-lg text-headline-md text-primary tracking-tight">Jeda</span>
+            <span class="font-display-lg text-headline-md text-primary tracking-tight">MentalHealth</span>
         </a>
         <nav class="hidden md:flex items-center gap-8 h-full">
             <?php foreach ($nav_items as $url => $label): ?>
@@ -37,11 +36,7 @@ $nav_items = [
                 <?php endif; ?>
             <?php endforeach; ?>
         </nav>
-        <div class="flex items-center gap-4">
-            <button aria-label="Profil Pengguna" class="text-on-surface-variant hover:text-primary transition-colors duration-300 scale-105 transition-transform duration-200">
-                <span class="material-symbols-outlined text-3xl">account_circle</span>
-            </button>
-        </div>
+
     </div>
 </header>
 

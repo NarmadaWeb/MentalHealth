@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Jeda - Ruang Tenang</title>
+    <title>MentalHealth - Ruang Tenang</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <!-- Google Fonts -->
@@ -196,7 +196,7 @@
             <div class="md:w-1/2 space-y-6 relative z-10">
                 <h2 class="font-headline-lg text-headline-lg text-on-background">Mengapa tes ini penting?</h2>
                 <p class="font-body-md text-body-md text-on-surface-variant">
-                    Mengenali kondisi diri adalah langkah pertama menuju kesejahteraan mental. Tes yang ada di Jeda dirancang sebagai cermin kecil untuk melihat apa yang mungkin selama ini terabaikan di tengah kesibukan.
+                    Mengenali kondisi diri adalah langkah pertama menuju kesejahteraan mental. Tes yang ada di MentalHealth dirancang sebagai cermin kecil untuk melihat apa yang mungkin selama ini terabaikan di tengah kesibukan.
                 </p>
                 <ul class="space-y-4 pt-4">
                     <li class="flex items-start gap-4">

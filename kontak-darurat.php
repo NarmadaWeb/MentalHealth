@@ -1,19 +1,12 @@
-<?php
-session_start();
-// Clear any previous test session so we can start fresh
-if (isset($_SESSION['answers'])) {
-    unset($_SESSION['answers']);
-}
-?>
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>MentalHealth - Tes Mandiri</title>
+    <title>Kontak Darurat - MentalHealth</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet"/>
     <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -104,37 +97,52 @@ if (isset($_SESSION['answers'])) {
         }
     </script>
 </head>
-<body class="bg-background text-on-surface font-body-md text-body-md antialiased min-h-screen relative overflow-x-hidden pt-20 pb-24 md:pb-0">
-    <div class="fixed top-[-10%] left-[-10%] w-[50%] h-[50%] bg-surface-container rounded-full mix-blend-multiply filter blur-[100px] opacity-60 pointer-events-none -z-10"></div>
-    <div class="fixed bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-secondary-fixed rounded-full mix-blend-multiply filter blur-[100px] opacity-40 pointer-events-none -z-10"></div>
-
+<body class="bg-background text-on-surface font-body-md text-body-md antialiased min-h-screen relative overflow-x-hidden flex flex-col">
     <?php include 'components/navbar.php'; ?>
 
-    <main class="max-w-7xl mx-auto px-container-padding-mobile md:px-container-padding-desktop py-section-gap flex flex-col gap-section-gap z-10 relative mt-16 md:mt-24">
-        <section class="flex flex-col items-center text-center max-w-3xl mx-auto mt-8 md:mt-16 gap-unit">
-            <h1 class="font-display-lg text-display-lg text-on-surface mb-4">Ruang <span class="text-primary">Tenang</span> untuk Merefleksikan Diri</h1>
-            <p class="font-body-lg text-body-lg text-on-surface-variant">Bagaimana perasaanmu hari ini? Mari kita mulai perjalananmu pelan-pelan. Tes mandiri ini dirancang sebagai langkah awal untuk mengenali kondisimu dengan cara yang nyaman dan suportif.</p>
-        </section>
+    <main class="max-w-5xl mx-auto px-container-padding-mobile md:px-container-padding-desktop py-section-gap flex-grow mt-16 md:mt-24 z-10 relative">
+        <h1 class="font-display-lg text-headline-lg text-error mb-4 text-center md:text-left">Kontak Darurat</h1>
+        <p class="font-body-lg text-body-lg text-on-surface-variant mb-12 text-center md:text-left max-w-2xl">
+            Jika Anda merasa dalam keadaan krisis emosional, membutuhkan pertolongan mendesak, atau memiliki dorongan untuk menyakiti diri sendiri, Anda tidak sendirian. Segera hubungi salah satu layanan darurat berikut yang bersedia membantu 24 jam:
+        </p>
 
-        <section class="flex justify-center w-full">
-            <div class="max-w-2xl w-full bg-surface-container-lowest rounded-2xl shadow-[0_10px_40px_rgba(176,212,227,0.3)] p-8 md:p-12 flex flex-col items-center text-center border border-surface-container-high/50 hover:shadow-[0_15px_50px_rgba(176,212,227,0.4)] transition-all duration-300 relative overflow-hidden group">
-                <div class="absolute top-0 right-0 w-64 h-64 bg-primary-container rounded-full mix-blend-multiply opacity-20 transform translate-x-1/3 -translate-y-1/3 blur-3xl transition-transform duration-500 group-hover:scale-110"></div>
-                <div class="absolute bottom-0 left-0 w-48 h-48 bg-secondary-container rounded-full mix-blend-multiply opacity-20 transform -translate-x-1/3 translate-y-1/3 blur-2xl transition-transform duration-500 group-hover:scale-110"></div>
-                
-                <div class="w-20 h-20 rounded-full bg-surface-container-low flex items-center justify-center mb-6 group-hover:bg-primary-container transition-colors duration-300 relative z-10 shadow-sm">
-                    <span class="material-symbols-outlined text-primary text-4xl" style="font-variation-settings: 'FILL' 1;">psychology</span>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Layanan Sejiwa -->
+            <div class="bg-surface-container-lowest p-8 rounded-2xl shadow-[0_10px_30px_rgba(176,212,227,0.2)] border border-error-container/50 hover:shadow-[0_15px_40px_rgba(176,212,227,0.3)] transition-all flex flex-col h-full group">
+                <div class="w-14 h-14 rounded-full bg-error-container text-error flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">call</span>
                 </div>
-                
-                <h2 class="font-headline-lg text-headline-lg text-on-surface mb-4 relative z-10">Skrining Kesehatan Mental (DASS-21)</h2>
-                <p class="font-body-lg text-body-lg text-on-surface-variant mb-10 relative z-10 max-w-lg">
-                    Tes ini akan membantu mengevaluasi tingkat <strong class="text-on-surface">Depresi</strong>, <strong class="text-on-surface">Kecemasan</strong>, dan <strong class="text-on-surface">Stres</strong> yang mungkin kamu alami. Terdiri dari 21 pertanyaan singkat yang merefleksikan perasaanmu selama seminggu terakhir.
-                </p>
-                
-                <a href="/tes" class="bg-primary text-on-primary font-label-md text-label-md text-center rounded-full py-4 px-10 hover:scale-105 transition-all duration-200 ease-out shadow-[0_4px_14px_rgba(70,101,88,0.3)] relative z-10 text-lg">
-                    Mulai Skrining Sekarang
-                </a>
+                <h2 class="font-headline-md text-headline-md text-on-surface mb-2">Layanan Sejiwa (Kemenkes)</h2>
+                <p class="font-body-md text-body-md text-on-surface-variant mb-8 flex-grow">Layanan dukungan psikologis dan kesehatan mental awal resmi dari Kementerian Kesehatan RI.</p>
+                <div class="bg-error/10 text-error font-bold text-xl px-4 py-3 rounded-lg text-center mt-auto">
+                    119 (Ekstensi 8)
+                </div>
             </div>
-        </section>
+
+            <!-- Yayasan Pulih -->
+            <div class="bg-surface-container-lowest p-8 rounded-2xl shadow-[0_10px_30px_rgba(176,212,227,0.2)] border border-surface-container-high/50 hover:shadow-[0_15px_40px_rgba(176,212,227,0.3)] transition-all flex flex-col h-full group">
+                <div class="w-14 h-14 rounded-full bg-primary-container text-primary flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">forum</span>
+                </div>
+                <h2 class="font-headline-md text-headline-md text-on-surface mb-2">Yayasan Pulih</h2>
+                <p class="font-body-md text-body-md text-on-surface-variant mb-8 flex-grow">Layanan pemulihan trauma dan konseling psikologis profesional bagi masyarakat.</p>
+                <div class="bg-primary/10 text-primary font-bold text-xl px-4 py-3 rounded-lg text-center mt-auto">
+                    0811-8436-633
+                </div>
+            </div>
+
+            <!-- Layanan Gawat Darurat Umum -->
+            <div class="bg-surface-container-lowest p-8 rounded-2xl shadow-[0_10px_30px_rgba(176,212,227,0.2)] border border-surface-container-high/50 hover:shadow-[0_15px_40px_rgba(176,212,227,0.3)] transition-all flex flex-col h-full group">
+                <div class="w-14 h-14 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">local_hospital</span>
+                </div>
+                <h2 class="font-headline-md text-headline-md text-on-surface mb-2">Gawat Darurat Nasional</h2>
+                <p class="font-body-md text-body-md text-on-surface-variant mb-8 flex-grow">Nomor darurat terpadu untuk meminta bantuan ambulans dan respon medis cepat terdekat.</p>
+                <div class="bg-secondary/10 text-on-secondary-fixed font-bold text-xl px-4 py-3 rounded-lg text-center mt-auto">
+                    112 / 119
+                </div>
+            </div>
+        </div>
     </main>
 
     <?php include 'components/footer.php'; ?>
