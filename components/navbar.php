@@ -5,7 +5,7 @@ $current_path = ltrim($current_path, '/');
 // active helper
 if (!function_exists('is_active')) {
     function is_active($path, $current_path) {
-        if ($path === '/' && ($current_path === '' || $current_path === 'index')) {
+        if ($path === '/' && ($current_path === '' || $current_path === 'home')) {
             return true;
         }
         if ($path !== '/' && strpos($current_path, ltrim($path, '/')) === 0) {
