@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="Electron" version="21.6.8" modified="2026-06-05T00:00:00.000Z" agent="Mozilla/5.0" type="device">
+  <diagram id="act-pusat-ketenangan" name="Activity Pusat Ketenangan">
+    <mxGraphModel dx="1000" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="800" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="frame" value="" style="fillColor=none;strokeColor=none;pointerEvents=0;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="800" height="1000" as="geometry"/>
+        </mxCell>
+        <mxCell id="lane_left" value="Pengguna" style="swimlane;startSize=30;html=1;whiteSpace=wrap;collapsible=0;connectable=0;container=1;pointerEvents=0;fillColor=none;strokeColor=#000000;fontStyle=1;align=center;fontSize=13;fontColor=#000000;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="60" y="40" width="300" height="920" as="geometry"/>
+        </mxCell>
+        <mxCell id="lane_right" value="Sistem" style="swimlane;startSize=30;html=1;whiteSpace=wrap;collapsible=0;connectable=0;container=1;pointerEvents=0;fillColor=none;strokeColor=#000000;fontStyle=1;align=center;fontSize=13;fontColor=#000000;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="400" y="40" width="300" height="920" as="geometry"/>
+        </mxCell>
+        <mxCell id="start" value="" style="ellipse;html=1;fillColor=#000000;strokeColor=none;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="195" y="70" width="30" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="buka" value="Akses Pusat Ketenangan&#10;(pusat-ketenangan.php)" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;fontSize=12;fontColor=#000000;align=center;verticalAlign=middle;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="110" y="135" width="200" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="tampil" value="Menampilkan menu relaksasi&#10;dan visual bento grid" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;fontSize=12;fontColor=#000000;align=center;verticalAlign=middle;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="450" y="135" width="200" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="pilih" value="Memilih Latihan?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=12;fontColor=#000000;align=center;verticalAlign=middle;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="150" y="225" width="120" height="75" as="geometry"/>
+        </mxCell>
+        <mxCell id="breath_start" value="Klik 'Mulai Latihan'&#10;di Latihan Pernapasan" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;fontSize=12;fontColor=#000000;align=center;verticalAlign=middle;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="110" y="340" width="200" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="breath_anim" value="Menjalankan animasi visual&#10;breathing circle (10s/cycle)" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;fontSize=12;fontColor=#000000;align=center;verticalAlign=middle;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="450" y="340" width="200" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="breath_afirmasi" value="Menampilkan afirmasi&#10;ketenangan setelah 5 siklus" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;fontSize=12;fontColor=#000000;align=center;verticalAlign=middle;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="450" y="430" width="200" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="breath_read" value="Membaca pesan afirmasi&#10;dan merasa rileks" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;fontSize=12;fontColor=#000000;align=center;verticalAlign=middle;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="110" y="430" width="200" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="grounding_read" value="Mengikuti teknik grounding&#10;indrawi 5-4-3-2-1 di layar" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;fontSize=12;fontColor=#000000;align=center;verticalAlign=middle;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="110" y="540" width="200" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="darurat_click" value="Mengakses Layanan Kontak&#10;Darurat (Butuh Teman Bicara?)" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;fontSize=12;fontColor=#000000;align=center;verticalAlign=middle;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="110" y="650" width="200" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="darurat_sys" value="Redirect ke chat konseling /&#10;dialing Layanan Sejiwa 119" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;fontSize=12;fontColor=#000000;align=center;verticalAlign=middle;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="450" y="650" width="200" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="final" value="" style="ellipse;html=1;fillColor=none;strokeColor=#000000;strokeWidth=2;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="195" y="780" width="30" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="final_in" value="" style="ellipse;html=1;fillColor=#000000;strokeColor=none;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="202" y="787" width="16" height="16" as="geometry"/>
+        </mxCell>
+        <mxCell id="e1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontSize=12;labelBackgroundColor=#FFFFFF;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="start" target="buka">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontSize=12;labelBackgroundColor=#FFFFFF;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="buka" target="tampil">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontSize=12;labelBackgroundColor=#FFFFFF;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tampil" target="pilih">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="550" y="200"/>
+              <mxPoint x="210" y="200"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" value="Pernapasan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontSize=12;labelBackgroundColor=#FFFFFF;fontColor=#000000;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pilih" target="breath_start">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="90" y="262.5"/>
+              <mxPoint x="90" y="310"/>
+              <mxPoint x="210" y="310"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" value="Grounding" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontSize=12;labelBackgroundColor=#FFFFFF;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pilih" target="grounding_read">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e6" value="Kontak" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontSize=12;labelBackgroundColor=#FFFFFF;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pilih" target="darurat_click">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="330" y="262.5"/>
+              <mxPoint x="330" y="620"/>
+              <mxPoint x="210" y="620"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontSize=12;labelBackgroundColor=#FFFFFF;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="breath_start" target="breath_anim">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontSize=12;labelBackgroundColor=#FFFFFF;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="breath_anim" target="breath_afirmasi">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontSize=12;labelBackgroundColor=#FFFFFF;fontColor=#000000;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="breath_afirmasi" target="breath_read">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontSize=12;labelBackgroundColor=#FFFFFF;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="breath_read" target="final">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="90" y="485"/>
+              <mxPoint x="90" y="755"/>
+              <mxPoint x="210" y="755"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontSize=12;labelBackgroundColor=#FFFFFF;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="grounding_read" target="final">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="330" y="595"/>
+              <mxPoint x="330" y="755"/>
+              <mxPoint x="210" y="755"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontSize=12;labelBackgroundColor=#FFFFFF;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="darurat_click" target="darurat_sys">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontSize=12;labelBackgroundColor=#FFFFFF;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="darurat_sys" target="final">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="550" y="755"/>
+              <mxPoint x="210" y="755"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

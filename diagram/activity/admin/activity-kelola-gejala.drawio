@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="Electron" version="21.6.8" modified="2026-06-05T00:00:00.000Z" agent="Mozilla/5.0" type="device">
+  <diagram id="act-kelola-gejala" name="Activity Kelola Gejala">
+    <mxGraphModel dx="1000" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="800" pageHeight="1050" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="frame" value="" style="fillColor=none;strokeColor=none;pointerEvents=0;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="800" height="1050" as="geometry"/>
+        </mxCell>
+        <mxCell id="lane_left" value="Admin" style="swimlane;startSize=30;html=1;whiteSpace=wrap;collapsible=0;connectable=0;container=1;pointerEvents=0;fillColor=none;strokeColor=#000000;fontStyle=1;align=center;fontSize=13;fontColor=#000000;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="60" y="40" width="300" height="970" as="geometry"/>
+        </mxCell>
+        <mxCell id="lane_right" value="Sistem" style="swimlane;startSize=30;html=1;whiteSpace=wrap;collapsible=0;connectable=0;container=1;pointerEvents=0;fillColor=none;strokeColor=#000000;fontStyle=1;align=center;fontSize=13;fontColor=#000000;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="400" y="40" width="300" height="970" as="geometry"/>
+        </mxCell>
+        <mxCell id="start" value="" style="ellipse;html=1;fillColor=#000000;strokeColor=none;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="195" y="70" width="30" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="go_menu" value="Mengakses menu&#10;Kelola Gejala" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;fontSize=12;fontColor=#000000;align=center;verticalAlign=middle;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="110" y="120" width="200" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="req_data" value="Request data pertanyaan&#10;dari database" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;fontSize=12;fontColor=#000000;align=center;verticalAlign=middle;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="450" y="120" width="200" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="show_table" value="Menampilkan daftar&#10;pertanyaan di dashboard" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;fontSize=12;fontColor=#000000;align=center;verticalAlign=middle;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="450" y="210" width="200" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="choose_act" value="Memilih tindakan&#10;(Tambah / Edit / Hapus)" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;fontSize=12;fontColor=#000000;align=center;verticalAlign=middle;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="110" y="300" width="200" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="dec_act" value="Pilih&#10;Tindakan?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=12;fontColor=#000000;align=center;verticalAlign=middle;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="150" y="390" width="120" height="75" as="geometry"/>
+        </mxCell>
+        <mxCell id="t_form" value="Isi form tambah data&#10;&amp; klik Simpan" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;fontSize=12;fontColor=#000000;align=center;verticalAlign=middle;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="110" y="510" width="200" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="t_val" value="Validasi input &amp; simpan&#10;ke database (INSERT)" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;fontSize=12;fontColor=#000000;align=center;verticalAlign=middle;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="450" y="510" width="200" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_form" value="Isi form edit data&#10;&amp; klik Simpan" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;fontSize=12;fontColor=#000000;align=center;verticalAlign=middle;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="110" y="620" width="200" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_val" value="Validasi input &amp; simpan&#10;perubahan (UPDATE)" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;fontSize=12;fontColor=#000000;align=center;verticalAlign=middle;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="450" y="620" width="200" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="d_form" value="Klik tombol Hapus &amp;&#10;konfirmasi tindakan" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;fontSize=12;fontColor=#000000;align=center;verticalAlign=middle;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="110" y="730" width="200" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="d_val" value="Hapus data dari&#10;database (DELETE)" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;fontSize=12;fontColor=#000000;align=center;verticalAlign=middle;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="450" y="730" width="200" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="show_ok" value="Tampilkan pesan sukses&#10;dan refresh tabel" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;fontSize=12;fontColor=#000000;align=center;verticalAlign=middle;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="450" y="840" width="200" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="final" value="" style="ellipse;html=1;fillColor=none;strokeColor=#000000;strokeWidth=2;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="195" y="950" width="30" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="final_in" value="" style="ellipse;html=1;fillColor=#000000;strokeColor=none;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="202" y="957" width="16" height="16" as="geometry"/>
+        </mxCell>
+        <mxCell id="e1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontSize=12;labelBackgroundColor=#FFFFFF;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="start" target="go_menu">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontSize=12;labelBackgroundColor=#FFFFFF;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="go_menu" target="req_data">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontSize=12;labelBackgroundColor=#FFFFFF;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="req_data" target="show_table">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontSize=12;labelBackgroundColor=#FFFFFF;fontColor=#000000;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="show_table" target="choose_act">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="380" y="237.5"/>
+              <mxPoint x="380" y="327.5"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontSize=12;labelBackgroundColor=#FFFFFF;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="choose_act" target="dec_act">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e6" value="Tambah" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontSize=12;labelBackgroundColor=#FFFFFF;fontColor=#000000;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dec_act" target="t_form">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="90" y="427.5"/>
+              <mxPoint x="90" y="485"/>
+              <mxPoint x="210" y="485"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" value="Edit" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontSize=12;labelBackgroundColor=#FFFFFF;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dec_act" target="e_form">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e8" value="Hapus" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontSize=12;labelBackgroundColor=#FFFFFF;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dec_act" target="d_form">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="330" y="427.5"/>
+              <mxPoint x="330" y="705"/>
+              <mxPoint x="210" y="705"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontSize=12;labelBackgroundColor=#FFFFFF;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="t_form" target="t_val">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontSize=12;labelBackgroundColor=#FFFFFF;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="e_form" target="e_val">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontSize=12;labelBackgroundColor=#FFFFFF;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="d_form" target="d_val">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontSize=12;labelBackgroundColor=#FFFFFF;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t_val" target="show_ok">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="670" y="537.5"/>
+              <mxPoint x="670" y="815"/>
+              <mxPoint x="550" y="815"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontSize=12;labelBackgroundColor=#FFFFFF;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="e_val" target="show_ok">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="670" y="647.5"/>
+              <mxPoint x="670" y="815"/>
+              <mxPoint x="550" y="815"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontSize=12;labelBackgroundColor=#FFFFFF;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="d_val" target="show_ok">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontSize=12;labelBackgroundColor=#FFFFFF;fontColor=#000000;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="show_ok" target="final">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="380" y="867.5"/>
+              <mxPoint x="380" y="965.0"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

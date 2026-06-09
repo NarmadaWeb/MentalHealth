@@ -2,10 +2,10 @@
     <div class="max-w-7xl mx-auto flex flex-col gap-6 items-center">
         <div class="font-display-lg text-headline-md text-primary mb-4">MentalHealth</div>
         <nav class="flex flex-wrap justify-center gap-6 mb-6">
-            <a class="text-on-surface-variant hover:text-secondary transition-colors transition-all duration-300" href="/tentang-kami">Tentang Kami</a>
-            <a class="text-on-surface-variant hover:text-secondary transition-colors transition-all duration-300" href="/kebijakan-privasi">Kebijakan Privasi</a>
-            <a class="text-on-surface-variant hover:text-secondary transition-colors transition-all duration-300" href="/kontak-darurat">Kontak Darurat</a>
-            <a class="text-on-surface-variant hover:text-secondary transition-colors transition-all duration-300" href="/syarat-ketentuan">Syarat Ketentuan</a>
+            <a class="text-on-surface-variant hover:text-secondary transition-colors transition-all duration-300" href="/tentang-kami.php">Tentang Kami</a>
+            <a class="text-on-surface-variant hover:text-secondary transition-colors transition-all duration-300" href="/kebijakan-privasi.php">Kebijakan Privasi</a>
+            <a class="text-on-surface-variant hover:text-secondary transition-colors transition-all duration-300" href="/kontak-darurat.php">Kontak Darurat</a>
+            <a class="text-on-surface-variant hover:text-secondary transition-colors transition-all duration-300" href="/syarat-ketentuan.php">Syarat Ketentuan</a>
         </nav>
         <p class="text-primary max-w-2xl text-sm opacity-80 text-on-surface-variant">
             © <span id="footer-year">2026</span> MentalHealth. Hasil tes ini hanya untuk keperluan refleksi diri dan skrining awal. Bukan pengganti diagnosis profesional.

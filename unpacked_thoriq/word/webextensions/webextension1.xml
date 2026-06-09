@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<we:webextension xmlns:we="http://schemas.microsoft.com/office/webextensions/webextension/2010/11" id="{E7E90CA2-7B30-419B-958B-D811D0A3B80D}">
+  <we:reference id="wa200005502" version="1.0.0.12" store="id-ID" storeType="OMEX"/>
+  <we:alternateReferences>
+    <we:reference id="WA200005502" version="1.0.0.12" store="" storeType="OMEX"/>
+  </we:alternateReferences>
+  <we:properties>
+    <we:property name="docId" value="&quot;pe9TdKkxtAs7gV9Pnbosx&quot;"/>
+    <we:property name="data" value="{&quot;version&quot;:9,&quot;queries&quot;:[],&quot;_migrations&quot;:{}}"/>
+  </we:properties>
+  <we:bindings/>
+  <we:snapshot xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"/>
+</we:webextension>

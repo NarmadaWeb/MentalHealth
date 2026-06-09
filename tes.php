@@ -18,10 +18,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $next_q = $q_id + 1;
         if ($next_q > count($questions)) {
             // Test finished
-            header("Location: /hasil");
+            header("Location: /hasil.php");
             exit();
         } else {
-            header("Location: /tes?q=" . $next_q);
+            header("Location: /tes.php?q=" . $next_q);
             exit();
         }
     }
@@ -40,7 +40,7 @@ $selected_option = isset($_SESSION['answers'][$current_q]) ? $_SESSION['answers'
 
 // Handle back button
 $prev_q = $current_q - 1;
-$back_url = $prev_q > 0 ? "/tes?q=$prev_q" : "/tes-mandiri";
+$back_url = $prev_q > 0 ? "/tes.php?q=$prev_q" : "/tes-mandiri.php";
 
 ?>
 <!DOCTYPE html>
@@ -166,7 +166,7 @@ $back_url = $prev_q > 0 ? "/tes?q=$prev_q" : "/tes-mandiri";
         </div>
 
         <!-- Assessment Container -->
-        <form method="POST" action="/tes" class="bg-surface/80 backdrop-blur-2xl rounded-[32px] p-8 md:p-12 shadow-[0_20px_60px_rgba(176,212,227,0.15)] border border-white/40">
+        <form method="POST" action="/tes.php" class="bg-surface/80 backdrop-blur-2xl rounded-[32px] p-8 md:p-12 shadow-[0_20px_60px_rgba(176,212,227,0.15)] border border-white/40">
             <input type="hidden" name="question_id" value="<?php echo $current_q; ?>" />
 
             <!-- Question -->

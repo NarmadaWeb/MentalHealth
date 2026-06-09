@@ -125,7 +125,7 @@
                     Selamat datang di ruang tenangmu. Mari luangkan sejenak waktu untuk mengenali perasaan dan kondisi mentalmu tanpa penghakiman.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 pt-4">
-                    <a href="/tes-mandiri" class="inline-block text-center bg-primary text-on-primary rounded-full px-8 py-4 font-label-md text-label-md hover:scale-[1.02] transition-transform duration-300 shadow-[0_10px_30px_rgba(176,212,227,0.3)]">
+                    <a href="/tes-mandiri.php" class="inline-block text-center bg-primary text-on-primary rounded-full px-8 py-4 font-label-md text-label-md hover:scale-[1.02] transition-transform duration-300 shadow-[0_10px_30px_rgba(176,212,227,0.3)]">
                         Mulai Perjalanan
                     </a>
                 </div>
@@ -145,7 +145,7 @@
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <!-- Tingkat Stres -->
-            <a class="group bg-surface-container-lowest rounded-xl p-6 shadow-[0_10px_30px_rgba(176,212,227,0.15)] hover:shadow-[0_15px_40px_rgba(176,212,227,0.3)] transition-all duration-300 relative overflow-hidden flex flex-col justify-between h-56 border border-surface-container-high" href="/tes">
+            <a class="group bg-surface-container-lowest rounded-xl p-6 shadow-[0_10px_30px_rgba(176,212,227,0.15)] hover:shadow-[0_15px_40px_rgba(176,212,227,0.3)] transition-all duration-300 relative overflow-hidden flex flex-col justify-between h-56 border border-surface-container-high" href="/tes.php">
                 <div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-secondary mb-4 group-hover:scale-110 transition-transform">
                     <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">waves</span>
                 </div>
@@ -155,7 +155,7 @@
                 </div>
             </a>
             <!-- Kecemasan -->
-            <a class="group bg-surface-container-lowest rounded-xl p-6 shadow-[0_10px_30px_rgba(176,212,227,0.15)] hover:shadow-[0_15px_40px_rgba(176,212,227,0.3)] transition-all duration-300 relative overflow-hidden flex flex-col justify-between h-56 border border-surface-container-high" href="/tes">
+            <a class="group bg-surface-container-lowest rounded-xl p-6 shadow-[0_10px_30px_rgba(176,212,227,0.15)] hover:shadow-[0_15px_40px_rgba(176,212,227,0.3)] transition-all duration-300 relative overflow-hidden flex flex-col justify-between h-56 border border-surface-container-high" href="/tes.php">
                 <div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-primary mb-4 group-hover:scale-110 transition-transform">
                     <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">air</span>
                 </div>
@@ -165,7 +165,7 @@
                 </div>
             </a>
             <!-- Gejala Depresi -->
-            <a class="group bg-surface-container-lowest rounded-xl p-6 shadow-[0_10px_30px_rgba(176,212,227,0.15)] hover:shadow-[0_15px_40px_rgba(176,212,227,0.3)] transition-all duration-300 relative overflow-hidden flex flex-col justify-between h-56 border border-surface-container-high" href="/tes">
+            <a class="group bg-surface-container-lowest rounded-xl p-6 shadow-[0_10px_30px_rgba(176,212,227,0.15)] hover:shadow-[0_15px_40px_rgba(176,212,227,0.3)] transition-all duration-300 relative overflow-hidden flex flex-col justify-between h-56 border border-surface-container-high" href="/tes.php">
                 <div class="w-12 h-12 rounded-full bg-tertiary-container flex items-center justify-center text-tertiary mb-4 group-hover:scale-110 transition-transform">
                     <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">nightlight</span>
                 </div>
@@ -175,7 +175,7 @@
                 </div>
             </a>
             <!-- Burnout -->
-            <a class="group bg-surface-container-lowest rounded-xl p-6 shadow-[0_10px_30px_rgba(176,212,227,0.15)] hover:shadow-[0_15px_40px_rgba(176,212,227,0.3)] transition-all duration-300 relative overflow-hidden flex flex-col justify-between h-56 border border-surface-container-high lg:-mt-8" href="/tes">
+            <a class="group bg-surface-container-lowest rounded-xl p-6 shadow-[0_10px_30px_rgba(176,212,227,0.15)] hover:shadow-[0_15px_40px_rgba(176,212,227,0.3)] transition-all duration-300 relative overflow-hidden flex flex-col justify-between h-56 border border-surface-container-high lg:-mt-8" href="/tes.php">
                 <div class="w-12 h-12 rounded-full bg-error-container flex items-center justify-center text-error mb-4 group-hover:scale-110 transition-transform">
                     <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
                 </div>

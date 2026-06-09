@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="Electron" version="21.6.8" modified="2026-06-05T00:00:00.000Z" agent="Mozilla/5.0" type="device">
+  <diagram id="admin_login_page" name="Desain Halaman Login Admin">
+    <mxGraphModel dx="1000" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="800" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="browser" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="50" y="50" width="900" height="700" as="geometry"/>
+        </mxCell>
+        <mxCell id="login_card" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="180" width="360" height="400" as="geometry"/>
+        </mxCell>
+        <mxCell id="title" value="LOGIN ADMIN" style="text;html=1;align=center;fontColor=#000000;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="210" width="300" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="subtitle" value="MentalHealth Admin Panel" style="text;html=1;align=center;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="350" y="245" width="300" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="lbl_usr" value="Username" style="text;html=1;align=left;fontColor=#000000;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="280" width="100" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="in_usr" value=" admin" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="360" y="305" width="280" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="lbl_pwd" value="Password" style="text;html=1;align=left;fontColor=#000000;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="365" width="100" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="in_pwd" value=" ••••••••" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="360" y="390" width="280" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="btn_login" value="Masuk" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#000000;fontColor=#FFFFFF;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="360" y="470" width="280" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="back_link" value="← Kembali ke beranda" style="text;html=1;align=center;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="350" y="530" width="300" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="footer" value="© 2026 MentalHealth. All rights reserved." style="text;html=1;align=center;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="300" y="700" width="400" height="30" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

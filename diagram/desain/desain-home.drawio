@@ -1,0 +1,46 @@
+<mxfile host="65bd71144e">
+    <diagram id="home_page" name="Desain Halaman Utama">
+        <mxGraphModel dx="792" dy="797" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="800" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="browser" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="50" width="900" height="700" as="geometry"/>
+                </mxCell>
+                <mxCell id="nav" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="50" width="900" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="logo" value="MentalHealth" style="text;html=1;align=left;fontColor=#000000;fontSize=20;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="65" width="150" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="menu" value="Beranda  |  Tes Mandiri  |  Pusat Ketenangan  |  Tentang Kami" style="text;html=1;align=center;fontColor=#000000;fontSize=14;" parent="1" vertex="1">
+                    <mxGeometry x="300" y="65" width="450" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="btn_admin" value="Login Admin" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontStyle=1;fontSize=14;" parent="1" vertex="1">
+                    <mxGeometry x="820" y="63" width="110" height="34" as="geometry"/>
+                </mxCell>
+                <mxCell id="hero_title" value="Kenali Kondisi Kesehatan Mental Anda&#10;Secara Dini &amp; Mandiri" style="text;html=1;align=center;fontColor=#000000;fontSize=28;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="150" y="180" width="700" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="hero_sub" value="Evaluasi tingkat depresi, kecemasan, dan stres Anda secara ilmiah&lt;br&gt;menggunakan metode instrumen psikologis DASS." style="text;html=1;align=center;fontColor=#000000;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="270" width="600" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="btn_start" value="Mulai Tes Mandiri (DASS)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#000000;fontColor=#FFFFFF;fontStyle=1;fontSize=14;" parent="1" vertex="1">
+                    <mxGeometry x="375" y="360" width="250" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="card1" value="&lt;b&gt;Tes Terstandardisasi&lt;/b&gt;&lt;br&gt;&lt;br&gt;Menggunakan 21 parameter pertanyaan DASS-21 yang valid dan reliabel." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="480" width="240" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="card2" value="&lt;b&gt;Skor &amp; Analisis Instan&lt;/b&gt;&lt;br&gt;&lt;br&gt;Dapatkan skor keparahan secara otomatis setelah Anda selesai mengisi tes." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="480" width="240" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="card3" value="&lt;b&gt;Pusat Ketenangan&lt;/b&gt;&lt;br&gt;&lt;br&gt;Dilengkapi dengan panduan relaksasi, musik meditasi, dan tips mitigasi mandiri." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="660" y="480" width="240" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="footer" value="© 2026 MentalHealth. All rights reserved." style="text;html=1;align=center;fontColor=#000000;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="300" y="700" width="400" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

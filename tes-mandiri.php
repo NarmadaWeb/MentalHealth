@@ -130,7 +130,7 @@ if (isset($_SESSION['answers'])) {
                     Tes ini akan membantu mengevaluasi tingkat <strong class="text-on-surface">Depresi</strong>, <strong class="text-on-surface">Kecemasan</strong>, dan <strong class="text-on-surface">Stres</strong> yang mungkin kamu alami. Terdiri dari 21 pertanyaan singkat yang merefleksikan perasaanmu selama seminggu terakhir.
                 </p>
                 
-                <a href="/tes" class="bg-primary text-on-primary font-label-md text-label-md text-center rounded-full py-4 px-10 hover:scale-105 transition-all duration-200 ease-out shadow-[0_4px_14px_rgba(70,101,88,0.3)] relative z-10 text-lg">
+                <a href="/tes.php" class="bg-primary text-on-primary font-label-md text-label-md text-center rounded-full py-4 px-10 hover:scale-105 transition-all duration-200 ease-out shadow-[0_4px_14px_rgba(70,101,88,0.3)] relative z-10 text-lg">
                     Mulai Skrining Sekarang
                 </a>
             </div>

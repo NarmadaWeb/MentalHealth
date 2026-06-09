@@ -4,7 +4,7 @@ require_once 'data_dass21.php';
 
 // Redirect to start if answers are not complete
 if (!isset($_SESSION['answers']) || count($_SESSION['answers']) < count($questions)) {
-    header("Location: /tes-mandiri");
+    header("Location: /tes-mandiri.php");
     exit();
 }
 
@@ -211,11 +211,11 @@ foreach (["Depresi" => $dep_class, "Kecemasan" => $anx_class, "Stres" => $str_cl
             </div>
 
             <div class="mt-12 flex flex-col sm:flex-row justify-center items-center gap-4 border-t border-outline-variant/20 pt-8">
-                <a href="pusat-ketenangan" class="flex items-center justify-center gap-2 px-8 py-4 w-full sm:w-auto rounded-full bg-primary text-on-primary font-label-md text-label-md hover:scale-[1.02] transition-transform shadow-[0_4px_14px_rgba(70,101,88,0.3)]">
+                <a href="/pusat-ketenangan.php" class="flex items-center justify-center gap-2 px-8 py-4 w-full sm:w-auto rounded-full bg-primary text-on-primary font-label-md text-label-md hover:scale-[1.02] transition-transform shadow-[0_4px_14px_rgba(70,101,88,0.3)]">
                     Kunjungi Pusat Ketenangan
                     <span class="material-symbols-outlined text-[20px]">spa</span>
                 </a>
-                <a href="tes-mandiri" class="flex items-center justify-center gap-2 px-8 py-4 w-full sm:w-auto rounded-full bg-surface-container-highest text-primary font-label-md text-label-md hover:scale-[1.02] transition-transform">
+                <a href="/tes-mandiri.php" class="flex items-center justify-center gap-2 px-8 py-4 w-full sm:w-auto rounded-full bg-surface-container-highest text-primary font-label-md text-label-md hover:scale-[1.02] transition-transform">
                     Kembali ke Beranda
                 </a>
             </div>

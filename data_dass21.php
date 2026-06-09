@@ -1,8 +1,10 @@
 <?php
 // data_dass21.php
 // Data DASS-21 (Depression, Anxiety, and Stress Scale - 21 items)
+// Dimuat dari database (dikelola via /admin) dengan fallback ke hardcoded.
 
-$questions = [
+// Fallback hardcoded (dipakai jika database tidak tersedia)
+$_fallback_questions = [
     1 => ["text" => "Saya merasa sulit untuk menenangkan diri.", "type" => "stress"],
     2 => ["text" => "Saya menyadari mulut saya terasa kering.", "type" => "anxiety"],
     3 => ["text" => "Saya sama sekali tidak dapat merasakan perasaan positif.", "type" => "depression"],
@@ -25,6 +27,30 @@ $questions = [
     20 => ["text" => "Saya merasa takut tanpa alasan yang jelas.", "type" => "anxiety"],
     21 => ["text" => "Saya merasa hidup ini tidak berarti.", "type" => "depression"],
 ];
+
+$questions = $_fallback_questions;
+
+// Coba muat dari database
+@require_once __DIR__ . '/db.php';
+if (function_exists('db')) {
+    try {
+        $_res = db()->query("SELECT g.id, g.question_text, k.nama_kategori AS question_type FROM gejala g JOIN kategori_gejala k ON g.kategori_id = k.id ORDER BY g.sort_order ASC, g.id ASC");
+        if ($_res) {
+            $_rows = $_res->fetch_all(MYSQLI_ASSOC);
+            if (!empty($_rows)) {
+                $questions = [];
+                foreach ($_rows as $_r) {
+                    $questions[(int)$_r['id']] = [
+                        'text' => $_r['question_text'],
+                        'type' => $_r['question_type'],
+                    ];
+                }
+            }
+        }
+    } catch (Throwable $e) {
+        // DB tidak tersedia, gunakan fallback
+    }
+}
 
 $options = [
     0 => "Tidak pernah sama sekali",

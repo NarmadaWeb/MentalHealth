@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="Electron" version="21.6.8" modified="2026-06-05T00:00:00.000Z" agent="Mozilla/5.0" type="device">
+  <diagram id="tes_page" name="Desain Halaman Tes">
+    <mxGraphModel dx="1000" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="800" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="browser" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="50" y="50" width="900" height="700" as="geometry"/>
+        </mxCell>
+        <mxCell id="nav" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="50" width="900" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="logo" value="MentalHealth" style="text;html=1;align=left;fontColor=#000000;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="65" width="150" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="menu" value="Beranda  |  &lt;b&gt;Tes Mandiri&lt;/b&gt;  |  Pusat Ketenangan  |  Tentang Kami" style="text;html=1;align=center;fontColor=#000000;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="300" y="65" width="450" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="btn_admin" value="Login Admin" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="820" y="63" width="110" height="34" as="geometry"/>
+        </mxCell>
+        <mxCell id="title" value="Tes Mandiri Kesehatan Mental (DASS-21)" style="text;html=1;align=center;fontColor=#000000;fontSize=22;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="130" width="700" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="desc" value="Silakan baca setiap pertanyaan di bawah dan pilih opsi jawaban yang paling menggambarkan kondisi Anda." style="text;html=1;align=center;fontColor=#000000;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="150" y="175" width="700" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="q1" value="&lt;b&gt;1. Saya merasa sulit untuk menenangkan diri.&lt;/b&gt;&lt;br&gt;&lt;br&gt;[ ] 0 - Tidak pernah  [ ] 1 - Kadang-kadang  [ ] 2 - Cukup sering  [ ] 3 - Sangat sering" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="230" width="700" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="q2" value="&lt;b&gt;2. Saya menyadari mulut saya terasa kering.&lt;/b&gt;&lt;br&gt;&lt;br&gt;[ ] 0 - Tidak pernah  [ ] 1 - Kadang-kadang  [ ] 2 - Cukup sering  [ ] 3 - Sangat sering" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="340" width="700" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="q3" value="&lt;b&gt;3. Saya sama sekali tidak dapat merasakan perasaan positif.&lt;/b&gt;&lt;br&gt;&lt;br&gt;[ ] 0 - Tidak pernah  [ ] 1 - Kadang-kadang  [ ] 2 - Cukup sering  [ ] 3 - Sangat sering" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="450" width="700" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="btn_submit" value="Kirim Hasil Tes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#000000;fontColor=#FFFFFF;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="400" y="570" width="200" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="footer" value="© 2026 MentalHealth. All rights reserved." style="text;html=1;align=center;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="300" y="700" width="400" height="30" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
